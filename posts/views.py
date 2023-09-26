@@ -15,3 +15,9 @@ def create_post(request):
     else:
         form = PostForm()
     return render(request, 'posts/create_post.html', {'form': form})
+
+
+from django.shortcuts import render
+
+def home(request):
+    return render(request, 'home/home.html')
